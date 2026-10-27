@@ -45,6 +45,6 @@ etc.
 
 ## Migration note (not done yet)
 
-The repo already lives at <https://gitlab.com/fabelium/cortado>. The Python
+The repo already lives at <https://github.com/fabelium/cortado>. The Python
 package is still `coffee` / `coffee_clips.py`; renaming it and the CLI to
 `cortado` is a separate, mechanical task for a later session. This file only **fixes the name**; the rename follows.

@@ -9,7 +9,7 @@ plus a 3-minute demo video. Each slide lists what goes **on screen** and what to
 
 ### 1. Title
 - **On screen:** *Un cortado, por favor* · "tu podcast, a tu gusto" · Abel Rincón ·
-  Máster de Desarrollo con IA (BIG school) · gitlab.com/fabelium/cortado
+  Máster de Desarrollo con IA (BIG school) · github.com/fabelium/cortado
 - **Say:** "Soy Abel Rincón y esto es Un cortado, por favor: una app que convierte un
   podcast enorme en un audio corto y a tu medida."
 
@@ -89,10 +89,13 @@ plus a 3-minute demo video. Each slide lists what goes **on screen** and what to
 - **On screen:** live progress (Reverb) · Docker images for the API and engine ·
   more AI providers · rename the package to `cortado` · repo URL · test account.
 - **Say:** "Lo siguiente: progreso en tiempo real, imágenes Docker de todo el
-  sistema y más proveedores de IA. El código está en GitLab, con instrucciones y un
+  sistema y más proveedores de IA. El código está en GitHub, con instrucciones y un
   usuario de prueba. Gracias."
 
 If time runs short, drop slide 7 or 9 (≈ 7 minutes).
+
+A ready-made demo (≈2 min, screen recording with Spanish narration) is in
+[`demo.mp4`](demo.mp4).
 
 ## Video script (≈3 min, screen recording of `make up`)
 
