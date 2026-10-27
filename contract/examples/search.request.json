@@ -1,0 +1,6 @@
+{
+  "version": "1.0",
+  "action": "search",
+  "query": "agujeros negros",
+  "options": { "semantic": true, "model": "local", "classify": false, "limit": 10 }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://coffee.local/contract/response.chat.schema.json",
+  "title": "ChatResponse",
+  "type": "object",
+  "required": ["version", "action", "ok", "answer", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": "1.0" },
+    "action": { "const": "chat" },
+    "ok": { "const": true },
+    "answer": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["episode", "date", "topic"],
+        "additionalProperties": false,
+        "properties": {
+          "episode": { "type": "integer" },
+          "date": { "type": "string", "format": "date" },
+          "topic": { "type": "string" }
+        }
+      }
+    }
+  }
+}

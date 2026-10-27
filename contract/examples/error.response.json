@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "action": "search",
+  "ok": false,
+  "error": "No results for 'xyzzy'.",
+  "code": 1
+}

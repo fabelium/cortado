@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://coffee.local/contract/response.transcribe.schema.json",
+  "title": "TranscribeResponse",
+  "type": "object",
+  "required": ["version", "action", "ok", "transcripts"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": "1.0" },
+    "action": { "const": "transcribe" },
+    "ok": { "const": true },
+    "transcripts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "txt", "srt"],
+        "additionalProperties": false,
+        "properties": {
+          "source": { "type": "string" },
+          "txt": { "type": "string" },
+          "srt": { "type": "string" }
+        }
+      }
+    }
+  }
+}

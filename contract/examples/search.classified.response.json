@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "action": "search",
+  "ok": true,
+  "fragments": [
+    {
+      "id": "ep256@4590-6280",
+      "episode": 256,
+      "date": "2020-02-27",
+      "start": 4590,
+      "end": 6280,
+      "duration": 1690,
+      "name": "MOND y materia oscura",
+      "score": 0.9606,
+      "reason": "Compara directamente MOND con la materia oscura."
+    },
+    {
+      "id": "ep240@1910-2850",
+      "episode": 240,
+      "date": "2019-11-07",
+      "start": 1910,
+      "end": 2850,
+      "duration": 940,
+      "name": "Cúspides de materia oscura",
+      "score": 0.9571,
+      "reason": "Trata la distribución de materia oscura en las galaxias."
+    },
+    {
+      "id": "ep267@5580-6300",
+      "episode": 267,
+      "date": "2020-05-14",
+      "start": 5580,
+      "end": 6300,
+      "duration": 720,
+      "name": "Nuevo modelo de materia oscura",
+      "score": 0.9147,
+      "reason": "Propone un modelo concreto de materia oscura."
+    }
+  ]
+}

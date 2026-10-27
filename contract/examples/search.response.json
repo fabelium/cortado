@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "action": "search",
+  "ok": true,
+  "fragments": [
+    {
+      "id": "ep237@2340-2880",
+      "episode": 237,
+      "date": "2019-10-17",
+      "start": 2340,
+      "end": 2880,
+      "duration": 540,
+      "name": "Agujeros negros primordiales como candidatos a materia oscura",
+      "score": 0.71,
+      "reason": "Directly about black holes as dark-matter candidates."
+    }
+  ]
+}

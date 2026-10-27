@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+# Engine artifacts only — a bare `cache/` would also swallow Laravel's
+# bootstrap/cache and storage/framework/cache tracked .gitignore files.
+/engine/cache/
+/engine/output/
+node_modules/
+.nuxt/
+.output/
+dist/
+.env
+
+api/vendor/
+api/.env
+api/node_modules/

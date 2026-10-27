@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "action": "search",
+  "query": "materia oscura",
+  "options": {
+    "semantic": true,
+    "model": "local",
+    "classify": true,
+    "top_k": 3,
+    "threshold": 0.5
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "action": "book",
+  "ok": true,
+  "artifacts": [
+    { "path": "output/marte_2026-06-26.md", "format": "markdown" },
+    { "path": "output/marte_2026-06-26.pdf", "format": "pdf" },
+    { "path": "output/marte_2026-06-26.epub", "format": "epub" }
+  ]
+}

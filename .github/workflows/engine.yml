@@ -1,0 +1,39 @@
+name: engine
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'engine/**'
+      - 'contract/**'
+      - '.github/workflows/engine.yml'
+  pull_request:
+    paths:
+      - 'engine/**'
+      - 'contract/**'
+      - '.github/workflows/engine.yml'
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: engine
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: engine/requirements.txt
+
+      # The engine shells out to ffmpeg; without it the audio tests fail.
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt pytest
+
+      - name: Run tests
+        run: python -m pytest -q

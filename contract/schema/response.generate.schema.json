@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://coffee.local/contract/response.generate.schema.json",
+  "title": "GenerateResponse",
+  "type": "object",
+  "required": ["version", "action", "ok", "artifacts"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": "1.0" },
+    "action": { "const": "generate" },
+    "ok": { "const": true },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "duration"],
+        "additionalProperties": false,
+        "properties": {
+          "path": { "type": "string" },
+          "duration": { "type": ["integer", "null"], "minimum": 0 },
+          "size_bytes": { "type": ["integer", "null"], "minimum": 0 }
+        }
+      }
+    }
+  }
+}

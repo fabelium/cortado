@@ -1,0 +1,9 @@
+feedparser>=6.0
+requests>=2.28
+yt-dlp>=2024.1
+gTTS>=2.5
+faster-whisper>=1.0   # only needed for --transcript
+fastembed>=0.3        # only needed for --semantic (local embeddings; no PyTorch)
+# Gemini (--model gemini / --classify) needs no SDK: it uses the REST API via requests.
+jsonschema>=4.0       # engine.py validates JSON requests against the contract (and tests)
+pytest>=7.0           # test runner (make test-engine)

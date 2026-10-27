@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://coffee.local/contract/request.schema.json",
+  "title": "EngineRequest",
+  "type": "object",
+  "required": ["version", "action"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": "1.0" },
+    "action": { "enum": ["search", "generate", "transcribe", "book", "chat"] },
+    "query": { "type": "string" },
+    "selection": { "type": "array", "items": { "type": "string" } },
+    "options": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "semantic": { "type": "boolean" },
+        "model": { "enum": ["local", "gemini"] },
+        "classify": { "type": "boolean" },
+        "limit": { "type": ["integer", "null"], "minimum": 1 },
+        "top_k": { "type": ["integer", "null"], "minimum": 1 },
+        "threshold": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "intro": { "type": "boolean" },
+        "disclaimer": { "type": "boolean" },
+        "split": { "type": ["integer", "null"], "minimum": 1 },
+        "formats": {
+          "type": "array",
+          "items": { "enum": ["pdf", "epub"] }
+        }
+      }
+    }
+  }
+}

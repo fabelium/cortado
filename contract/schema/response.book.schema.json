@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://coffee.local/contract/response.book.schema.json",
+  "title": "BookResponse",
+  "type": "object",
+  "required": ["version", "action", "ok", "artifacts"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": "1.0" },
+    "action": { "const": "book" },
+    "ok": { "const": true },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "format"],
+        "additionalProperties": false,
+        "properties": {
+          "path": { "type": "string" },
+          "format": { "enum": ["markdown", "pdf", "epub"] }
+        }
+      }
+    }
+  }
+}

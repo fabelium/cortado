@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://coffee.local/contract/response.error.schema.json",
+  "title": "ErrorResponse",
+  "type": "object",
+  "required": ["version", "ok", "error", "code"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": "1.0" },
+    "ok": { "const": false },
+    "action": { "enum": ["search", "generate", "transcribe", "book", "chat"] },
+    "error": { "type": "string" },
+    "code": { "enum": [1, 2, 130] }
+  }
+}

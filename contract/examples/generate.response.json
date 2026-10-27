@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "action": "generate",
+  "ok": true,
+  "artifacts": [
+    { "path": "output/agujeros_negros_2026-06-20.mp3", "duration": 540, "size_bytes": 12976128 }
+  ]
+}

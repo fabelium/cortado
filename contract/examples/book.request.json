@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "action": "book",
+  "query": "Marte",
+  "selection": ["ep237@300-480", "ep305@120-300"],
+  "options": { "formats": ["pdf", "epub"] }
+}

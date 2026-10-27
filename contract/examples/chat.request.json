@@ -1,0 +1,6 @@
+{
+  "version": "1.0",
+  "action": "chat",
+  "query": "¿Cuándo aterrizó la sonda Insight en Marte?",
+  "selection": ["ep237@300-480"]
+}

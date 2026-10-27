@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://coffee.local/contract/response.search.schema.json",
+  "title": "SearchResponse",
+  "type": "object",
+  "required": ["version", "action", "ok", "fragments"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": "1.0" },
+    "action": { "const": "search" },
+    "ok": { "const": true },
+    "fragments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "episode", "date", "start", "end", "duration", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "episode": { "type": "integer" },
+          "date": { "type": "string", "format": "date" },
+          "start": { "type": "integer", "minimum": 0 },
+          "end": { "type": ["integer", "null"], "minimum": 0 },
+          "duration": { "type": ["integer", "null"], "minimum": 0 },
+          "name": { "type": "string" },
+          "score": { "type": ["number", "null"] },
+          "reason": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

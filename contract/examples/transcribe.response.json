@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "action": "transcribe",
+  "ok": true,
+  "transcripts": [
+    {
+      "source": "output/agujeros_negros_2026-06-20.mp3",
+      "txt": "output/agujeros_negros_2026-06-20.txt",
+      "srt": "output/agujeros_negros_2026-06-20.srt"
+    }
+  ]
+}

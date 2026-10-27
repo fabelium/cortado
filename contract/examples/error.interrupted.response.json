@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "action": "generate",
+  "ok": false,
+  "error": "Interrupted while assembling the clip.",
+  "code": 130
+}

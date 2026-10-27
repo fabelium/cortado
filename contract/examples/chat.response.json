@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "action": "chat",
+  "ok": true,
+  "answer": "La sonda Insight aterrizó en Marte en noviembre de 2018 (237).",
+  "sources": [
+    { "episode": 237, "date": "2019-10-17", "topic": "Insight en Marte" }
+  ]
+}

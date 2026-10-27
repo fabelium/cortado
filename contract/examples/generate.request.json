@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "action": "generate",
+  "query": "agujeros negros",
+  "selection": ["ep237@2340-2880"],
+  "options": { "intro": true, "disclaimer": true, "split": 30 }
+}

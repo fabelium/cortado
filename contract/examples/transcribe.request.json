@@ -1,0 +1,5 @@
+{
+  "version": "1.0",
+  "action": "transcribe",
+  "selection": ["output/agujeros_negros_2026-06-20.mp3"]
+}
